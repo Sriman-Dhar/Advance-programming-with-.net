@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "TeamMember";
+}
+
+<a href="/">HOME</a>
+<a href="/Company/Services">SERVICES</a>
+<a href="/Company/TeamMember">TEAMS & MEMBERS</a>
+<a href="/Company/Contact">CONTACT</a>
+
+<h2>TeamMember</h2>
+
+
+@foreach (var item in Model)
+{
+    @item.TeamName
+}
+
+
