@@ -1,0 +1,28 @@
+﻿@model IEnumerable<WebApplication1.EF.Models.CollectRequest>
+@{
+    ViewBag.Title = "IndexCollectRequest";
+}
+
+<h2>Collect Requests</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Request Date</th>
+            <th>Expiration Date</th>
+            <th>Restaurant</th>
+            <th>Employee</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.RequestDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.ExpirationDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.Restaurant.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.Employee.Name)</td>
+            </tr>
+        }
+    </tbody>
+</table>

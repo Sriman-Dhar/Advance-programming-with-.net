@@ -1,0 +1,29 @@
+﻿@model IEnumerable<WebApplication1.EF.Models.FoodDistribution>
+
+@{
+    ViewBag.Title = "IndexFoodDistribution";
+}
+
+<h2>Food Distributions</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Collect Request</th>
+            <th>Distribution Date</th>
+            <th>Quantity</th>
+            <th>Restaurant</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.CollectRequest.RequestDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.DistributionDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.Quantity)</td>
+                <td>@Html.DisplayFor(modelItem => item.Restaurant.Name)</td>
+            </tr>
+        }
+    </tbody>
+</table>

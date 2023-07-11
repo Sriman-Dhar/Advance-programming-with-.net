@@ -1,0 +1,38 @@
+﻿@model WebApplication1.EF.Models.CollectRequest
+
+@{
+    ViewBag.Title = "CreateCollectRequest";
+}
+
+<h2>Create Collect Request</h2>
+
+@using (Html.BeginForm("CreateCollectRequest", "HungerZero", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.RequestDate)
+        @Html.TextBoxFor(model => model.RequestDate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.RequestDate)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ExpirationDate)
+        @Html.TextBoxFor(model => model.ExpirationDate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.ExpirationDate)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.RestaurantId)
+        @Html.DropDownListFor(model => model.RestaurantId, new SelectList(ViewBag.Restaurants, "RestaurantId", "Name"), "Select Restaurant", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.RestaurantId)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.EmployeeId)
+        @Html.DropDownListFor(model => model.EmployeeId, new SelectList(ViewBag.Employees, "EmployeeId", "Name"), "Select Employee", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.EmployeeId)
+    </div>
+
+    <input type="submit" value="Create" class="btn btn-primary" />
+}

@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Your NGO System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your NGO System</h1>
+        <p>Thank you for joining us in our mission to make use of wasted food.</p>
+        <a href="@Url.Action("CreateCollectRequest", "HungerZero")" class="btn btn-primary">Create Collect Request</a>
+        <a href="@Url.Action("CreateFoodDistribution", "HungerZero")" class="btn btn-primary">Create Food Distribution</a>
+        <a href="@Url.Action("IndexCollectRequest", "HungerZero")" class="btn btn-primary">View Collect Requests</a>
+        <a href="@Url.Action("IndexFoodDistribution", "HungerZero")" class="btn btn-primary">View Food Distributions</a>
+    </div>
+</body>
+</html>
