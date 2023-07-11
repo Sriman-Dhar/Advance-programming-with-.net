@@ -88,3 +88,4 @@ D:\American International University Bangladesh\My files Aiub\Codes\AdvanceDataB
 D:\American International University Bangladesh\My files Aiub\Codes\AdvanceDataBase\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.updateEmployee.resources
 D:\American International University Bangladesh\My files Aiub\Codes\AdvanceDataBase\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.updateRequest.resources
 D:\American International University Bangladesh\My files Aiub\Codes\AdvanceDataBase\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.updateFoodDis.resources
+D:\American International University Bangladesh\My files Aiub\Codes\AdvanceDataBase\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.updated.resources

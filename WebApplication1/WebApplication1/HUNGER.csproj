@@ -161,6 +161,10 @@
     <Compile Include="Migrations\202307111816257_updateFoodDis.designer.cs">
       <DependentUpon>202307111816257_updateFoodDis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202307111959024_updated.cs" />
+    <Compile Include="Migrations\202307111959024_updated.designer.cs">
+      <DependentUpon>202307111959024_updated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -270,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202307111816257_updateFoodDis.resx">
       <DependentUpon>202307111816257_updateFoodDis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307111959024_updated.resx">
+      <DependentUpon>202307111959024_updated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
